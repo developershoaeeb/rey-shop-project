@@ -1,0 +1,7 @@
+/* .active {
+  border: 3px solid rgb(255, 150, 31);
+} */
+.navlinks.active {
+  border-bottom: 5px solid rgb(255, 150, 31);
+  transition: all 0.2s ease;
+}

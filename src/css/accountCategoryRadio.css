@@ -1,0 +1,219 @@
+/* Account Categories Radio button  start ********************************/
+.account_category_radio_div input[type="radio"] {
+  display: none;
+}
+.account_category_radio_div2 input[type="radio"] {
+  display: none;
+}
+.account_category_radio_div3 input[type="radio"] {
+  display: none;
+}
+.account_category_radio_div44 input[type="radio"] {
+  display: none;
+}
+.account_category_radio_div4 input[type="radio"] {
+  display: none;
+}
+.labels {
+  display: block;
+  font-weight: 400;
+  /* margin-bottom: 10px; */
+}
+.labels:hover {
+  background-color: #ecebe9;
+}
+.spans {
+  display: flex;
+  align-items: start;
+  padding: 7px;
+  transition: 0.25s ease;
+  font-size: 34px;
+  line-height: 60px;
+}
+.labels .spans:before {
+  content: "";
+  background-color: #fff;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 15px;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 2px #222222;
+}
+.active .labels .spans:before {
+  box-shadow: inset 0 0 0 8px #222222;
+}
+.account_category_radio_div input[type="radio"]:checked + .spans:before {
+  box-shadow: inset 0 0 0 8px #222222;
+}
+.account_category_radio_div2 input[type="radio"]:checked + .spans:before {
+  box-shadow: inset 0 0 0 8px #222222;
+}
+.account_category_radio_div3 input[type="radio"]:checked + .spans:before {
+  box-shadow: inset 0 0 0 8px #222222;
+}
+.account_category_radio_div44 input[type="radio"]:checked + .spans:before {
+  box-shadow: inset 0 0 0 8px #222222;
+}
+.account_category_radio_div4 input[type="radio"]:checked + .spans:before {
+  box-shadow: inset 0 0 0 8px #222222;
+}
+
+/* Account Categories Radio button  end*****************************/
+@media only screen and (max-width: 1080px) and (min-width: 1020px)  {
+  .UD_title {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+}
+@media (max-width: 1080px) {
+  .spans {
+    padding: 4px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .labels .spans:before {
+    min-width: 22px;
+    min-height: 22px;
+    border-radius: 50%;
+    margin-top: 1px;
+  }
+}
+
+@media (max-width: 640px) {
+  .spans {
+    padding: 4px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .labels .spans:before {
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 50%;
+    margin-top: 6px;
+    box-shadow: inset 0 0 0 1px #00005c;
+  }
+  .active .labels .spans:before {
+    box-shadow: inset 0 0 0 4px #222222;
+  }
+  .account_category_radio_div input[type="radio"]:checked + .spans:before {
+    box-shadow: inset 0 0 0 4px #222222;
+  }
+  .account_category_radio_div2 input[type="radio"]:checked + .spans:before {
+    box-shadow: inset 0 0 0 4px #222222;
+  }
+  .account_category_radio_div3 input[type="radio"]:checked + .spans:before {
+    box-shadow: inset 0 0 0 4px #222222;
+  } 
+  .account_category_radio_div44 input[type="radio"]:checked + .spans:before {
+    box-shadow: inset 0 0 0 4px #222222;
+  }
+  .account_category_radio_div4 input[type="radio"]:checked + .spans:before {
+    box-shadow: inset 0 0 0 4px #222222;
+  }
+}
+
+/* Tab section ---------------------------------------------------------------------------------------- start */
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+@media (max-width: 1300px) {
+  .buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+
+.tabContainer .buttonContainer button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+}
+.tabContainer .buttonContainer button:hover {
+  background-color: #f1f1f1;
+}
+.tab_button {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.tab_content {
+  display: none;
+}
+.tab_button.active {
+  background-color: #ecebe9;
+}
+
+.tab_content.active {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .tabContainer .buttonContainer button {
+    padding: 10px;
+  }
+}
+
+/* sub section  */
+
+.sub_tab_content {
+  display: none;
+}
+.sub_tab_content.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.select_cabinet.active {
+  background-color: #ecebe9;
+}
+.select_cabinet {
+  background-color: #f9f9f9;
+}
+
+/* Select button background changing  */
+.cabinet_btn.active {
+  background-color: #000;
+  color: #fff;
+}
+.cabinet_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.cabinet_btn {
+  background-color: #fff;
+  color: #000;
+}
+
+/*   Radio list and it Content Div */
+.radio_list_content.active {
+  display: block;
+}
+.radio_list_content {
+  display: none;
+}
+.radio_list_content2.active {
+  display: block;
+}
+.radio_list_content2 {
+  display: none;
+}
+.radio_list_content3.active {
+  display: block;
+}
+.radio_list_content44.active {
+  display: block;
+}
+.radio_list_content3 {
+  display: none;
+}
+.radio_list_content44 {
+  display: none;
+}

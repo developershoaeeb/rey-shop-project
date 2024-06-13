@@ -1,0 +1,138 @@
+.hamburger_menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+}
+.hamburger_bar {
+  width: 34px;
+  height: 4px;
+  background-color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger_menu.active .hamburger_bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger_menu.active .hamburger_bar:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
+  background-color: #ffffff;
+}
+
+.hamburger_menu.active .hamburger_bar:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
+  background-color: #ffffff;
+}
+
+/* nav_logo */
+#nav_logo_white.active {
+  display: none;
+}
+#nav_logo_red.active {
+  display: none;
+}
+
+/* mobile_nav_bg */
+#mobile_nav_bg.active {
+  background-color: #8c8c54;
+}
+/* Toggle section start ============================================= */
+
+.toggle_text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.toggle_item {
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.toggle_container:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+/* hide_toggle_item  */
+.hide_toggle_item {
+  display: none;
+}
+.hide_toggle_item a {
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: 32px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.hide_toggle_item p {
+  padding-left: 20px;
+}
+
+.hide_toggle_item p:hover {
+  background-color: #8c8c54;
+}
+.hide_toggle_item.active {
+  display: block;
+  transition: all 1s ease;
+}
+.hide_toggle_item:last-child {
+  margin-bottom: 10px;
+}
+
+/* toggle hamburger  */
+.toggle_hamburger_menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+.toggle_hamburger_bar {
+  width: 13px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle_hamburger_menu .toggle_hamburger_bar:nth-child(1) {
+  transform: rotate(0deg);
+}
+.toggle_hamburger_menu .toggle_hamburger_bar:nth-child(2) {
+  transform: translateY(-6.5px) rotate(90deg);
+}
+
+.toggle_hamburger_menu.active .toggle_hamburger_bar:nth-child(1) {
+  transform: translateY(3.5px) rotate(45deg);
+}
+.toggle_hamburger_menu.active .toggle_hamburger_bar:nth-child(2) {
+  transform: translateY(-3.5px) rotate(-45deg);
+}
+
+/* main_nav_container  */
+#main_nav_container {
+  display: none;
+}
+#main_nav_container.active {
+  display: block;
+}
+
+/* desktop  */
+.navlinks.active {
+  border-bottom: 10px solid #bb6c3e;
+  transition: all 0.2s ease;
+}

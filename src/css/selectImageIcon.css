@@ -1,0 +1,65 @@
+/* selected image section overlay  select icon ---------------------------------------------------------------------------------------- End */
+
+.checkboxes[type="radio"] {
+  display: none;
+}
+.checkbox_label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  /* background-color: #000000; */
+}
+
+.checkbox_label::before {
+  color: #fff;
+  content: "";
+  background: url("../images/select.svg");
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+  transition: all 0.2s linear;
+  transform: scale(0);
+}
+
+:checked + .checkbox_label::before {
+  content: "";
+  color: #000;
+  background-color: #ffffff;
+  transform: scale(1);
+  z-index: 99999;
+  opacity: 1;
+}
+:checked + .checkbox_label {
+  transition: all 0.2s ease-in;
+  background-color: #000;
+}
+:checked + .checkbox_label img {
+  opacity: 0.5;
+  background: rgb(255, 255, 255);
+  transition: 0.1s;
+}
+
+@media (max-width: 768px) {
+  .checkbox_label::before {
+    color: #fff;
+    content: "";
+    background: url("../images/select.svg");
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    transition: all 0.2s linear;
+    transform: scale(0);
+  }
+}

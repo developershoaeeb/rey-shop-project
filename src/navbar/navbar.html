@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <!--Tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="w-full bg-[#e4e4e4] pt-[40px] pb-[30px]">
+      <!-- main nav container  -->
+      <section
+        class="max-w-[1920px] mx-auto w-full min-[428px]:px-[80px] px-[30px] flex justify-between gap-[20px] max-[1000px]:flex-col"
+      >
+        <!-- logo -->
+        <div class="logo">
+          <a href="/index.html"
+            ><img
+              class="min-[1700px]:w-[441px] xl:w-[300px] w-[165px]"
+              src="../../images/navbar/Rey-Xpress-Color-Logo.svg"
+              alt="logo"
+          /></a>
+        </div>
+        <!-- main links container -->
+        <div class="gap-[70px] flex flex-col justify-between items-end">
+          <!-- top links  -->
+          <div class="topLinks max-[1000px]:w-full">
+            <div
+              class="min-[1700px]:text-[18px] xl:text-[15px] text-[14px] sm:leading-[14px] leading-[32px] flex items-center max-[1000px]:flex-col max-[1000px]:block"
+            >
+              <!-- items  -->
+              <a
+                class="flex items-center gap-[10px] max-[1000px]:py-[20px]"
+                target="_blank"
+                href="/pages/page3.html"
+                ><img
+                  class="sm:w-[32px] w-[20px]"
+                  src="../../images/navbar/Rey-Xpress-Account-Icon.svg
+                  "
+                  alt="account"
+                />
+                SIGN IN / CREATE ACCOUNT</a
+              >
+              <!-- items  -->
+              <a
+                class="flex items-center gap-[10px] mx-[32px] px-[32px] border-l-2 border-r-2 border-[#9a999a]"
+                href="#"
+                ><img
+                  class="sm:w-[32px] w-[20px]"
+                  src="../../images/navbar/Rey-Xpress-Projects-Icon.svg
+                  "
+                  alt="project"
+                />
+                PROJECTS</a
+              >
+              <!-- items  -->
+              <a class="flex items-center gap-[10px]" href="../pages/page4.html"
+                ><img
+                  class="sm:w-[32px] w-[20px]"
+                  src="../../images/navbar/Rey-Xpress-Shopping-Cart-Icon.svg
+                  "
+                  alt="cart"
+                />
+                SHOPPING CART</a
+              >
+            </div>
+          </div>
+          <!-- bottom links  -->
+          <div class="bottomLinks">
+            <ul
+              id="navbar"
+              class="nav flex 2xl:gap-[60px] xl:gap-[40px] gap-[20px] min-[1700px]:text-[27px] xl:text-[21px] text-[18px] leading-[32px] text-[#9a999a] uppercase"
+            >
+              <li class="hover:text-[#666666]">
+                <a
+                  class="navlinks active pb-[28px]"
+                  target="_blank"
+                  href="/pages/page2.html"
+                  >PRODUCT & FINISHES</a
+                >
+              </li>
+              <li class="hover:text-[#666666]">
+                <a
+                  class="navlinks pb-[28px]"
+                  target="_blank"
+                  href="../pages/page5.html"
+                  >SHOP</a
+                >
+              </li>
+              <li class="hover:text-[#666666]">
+                <a class="navlinks pb-[28px]" target="_blank" href="#"
+                  >WHY REY-XPRESS</a
+                >
+              </li>
+              <li class="hover:text-[#666666]">
+                <a class="navlinks pb-[28px]" target="_blank" href="#"
+                  >TUTORIALS</a
+                >
+              </li>
+              <li class="hover:text-[#666666]">
+                <a class="navlinks pb-[28px]" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <script src="navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+.termsContainer {
+  max-width: 1920px;
+  padding: 200px 150px;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .termsContainer {
+    padding: 45px 30px;
+  }
+}
+
+.highlightText {
+  color: #bc6d3e;
+}
+
+/* section Title -------------------- */
+.termsSectionTitle {
+  margin-bottom: 25px;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .termsSectionTitle {
+    margin-bottom: 9px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+/* Big line hight --------------------- */
+
+.termsBigLineHightTitle {
+  margin-bottom: 25px;
+  font-size: 42px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .termsBigLineHightTitle {
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 16px;
+  }
+}
+
+/* Little Margin -------------------- */
+.bottomLittleMargin {
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+@media (max-width: 1024px) {
+  .bottomLittleMargin {
+    margin-bottom: 9px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+/* Large margin ------------------------ */
+.bottomLargeMargin {
+  margin-bottom: 75px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+@media (max-width: 1024px) {
+  .bottomLargeMargin {
+    margin-bottom: 38px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

@@ -1,0 +1,57 @@
+/* dimension_section  */
+.dimension_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  margin-top: 30px;
+  background-color: #ecebe9;
+}
+
+@media (max-width: 1325px) {
+  .dimension_section {
+    padding: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .dimension_section {
+    grid-template-columns: 1fr;
+    padding: 60px;
+    margin-top: 30px;
+    background-color: #ecebe9;
+  }
+}
+
+/* Dimension  */
+.select_box_container {
+  min-width: 177px;
+  height: 58px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  line-height: 41px;
+  padding: 0 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/doors/select-arrow-down.png);
+  background-position: right 15px bottom 20px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  border: 2px solid #222;
+}
+
+@media (max-width: 640px) {
+  .select_box_container {
+    min-width: 84px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 10px;
+    background-image: url(../images/page5/select-arrow-down.png);
+    background-position: right 10px bottom 8px;
+    background-size: 10px;
+  }
+}
